@@ -16,7 +16,13 @@
 
 ## Usage
 
-Generate a Javascript file
+First, install `gulp-json2js` as a development dependency:
+
+```shell
+npm install --save-dev gulp-json2js
+```
+
+Then, add it to your `gulpfile.js`:
 
 ```javascript
 var json2js = require('gulp-json2js');
