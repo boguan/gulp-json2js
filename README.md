@@ -78,7 +78,21 @@ module.exports = {
   name: {{person.name}},
   person: {{person}},
   item: {{list}},
-  li: {{list[0][1].c}}
+  li: {{list[0][1].item01}}
+};
+```
+
+local.js
+
+```js
+module.exports = {
+  createdTime: "Wed May 11 2016 14:24:17 GMT+0800 (CST)",
+  count: 0,
+  serial: "serial",
+  name: "Boguan",
+  person: {"name":"Boguan","nationality":"China"},
+  item: [["item00",{"item01":"c"}],"b",3],
+  li: "c"
 };
 ```
 
