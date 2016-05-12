@@ -23,8 +23,6 @@ function generate(template, sourceObject) {
 
         tempObj = sourceObject;
 
-        console.log(p1);
-
         while ((myArray = myRe.exec(p1)) !== null) {
           tempObj = tempObj[myArray[0]];
         }
