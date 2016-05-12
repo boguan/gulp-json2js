@@ -1,6 +1,6 @@
 {
   "name": "gulp-json2js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert JSON object to JS file",
   "main": "index.js",
   "scripts": {
