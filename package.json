@@ -12,6 +12,10 @@
     "JSON to JS",
     "JSON to Javascript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boguan/gulp-json2js.git"
+  },
   "author": "Boguan",
   "license": "MIT",
   "dependencies": {
@@ -19,5 +23,9 @@
     "gulp-data": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "through2": "^0.6.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/boguan/gulp-json2js/issues"
+  },
+  "homepage": "https://github.com/boguan/gulp-json2js#readme"
 }
