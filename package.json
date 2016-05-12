@@ -1,0 +1,23 @@
+{
+  "name": "gulp-json2js",
+  "version": "0.0.1",
+  "description": "Convert JSON object to JS file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp",
+    "plugin",
+    "JSON to JS",
+    "JSON to Javascript"
+  ],
+  "author": "Boguan",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.2",
+    "gulp-data": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "through2": "^0.6.3"
+  }
+}
