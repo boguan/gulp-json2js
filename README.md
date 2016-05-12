@@ -40,6 +40,48 @@ gulp.task('generateJS', function() {
     .pipe(gulp.dest('./data/'))
 });
 ```
+## Example:
+
+local.json
+
+```js
+{
+  "createdTime": "Wed May 11 2016 14:24:17 GMT+0800 (CST)",
+  "count": 0,
+  "list": [
+      ["item00", {"item01": "c"}], "b", 3
+  ],
+  "person": {
+    "name": "Boguan",
+    "nationality": "China"
+  },
+  "a": {
+    "b": {
+        "c": {
+            "d": {
+                "e": "serial"
+            }
+        }
+    }
+  },
+  "global": true
+}
+```
+
+localModel.js
+
+```js
+module.exports = {
+  createdTime: {{createdTime}},
+  count: {{count}},
+  serial: {{a.b['c']['d'].e}},
+  name: {{person.name}},
+  person: {{person}},
+  item: {{list}},
+  li: {{list[0][1].c}}
+};
+```
+
 ## LICENSE
 
 (MIT License)
