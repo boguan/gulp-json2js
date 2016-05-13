@@ -17,7 +17,8 @@ function generate(template, sourceObject) {
 
     if(matchedValue && matchedValue.length) {
 
-      if(p1 === matchedValue[0]) { // 只有字符串的情况
+      // 只有字符串的情况
+      if(p1 === matchedValue[0]) {
         tempObj = sourceObject[p1];
       } else {
         tempObj = sourceObject;
