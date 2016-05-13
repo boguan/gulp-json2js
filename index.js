@@ -49,15 +49,15 @@ module.exports = function(options) {
 
   return through.obj(function (file, enc, cb) {
 
-    if(file.data){
+    if(file.data) {
       opts.data = file.data;
     }
 
-    if(file.isStream()){
+    if(file.isStream()) {
       return cb(new PluginError('gulp-json-to-js', 'Streaming not supported'));
     }
 
-    if(file.isBuffer()){
+    if(file.isBuffer()) {
       try {
         var compiled;
         var contents = String(file.contents);
