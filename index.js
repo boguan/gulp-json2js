@@ -60,12 +60,12 @@ module.exports = function(options) {
 
     if(file.isBuffer()){
       try {
-      var compiled;
-      var contents = String(file.contents);
-      compiled = generate(contents, opts.data);
-      file.contents = new Buffer(compiled);
+        var compiled;
+        var contents = String(file.contents);
+        compiled = generate(contents, opts.data);
+        file.contents = new Buffer(compiled);
       } catch(e) {
-      return cb(new PluginError('gulp-json-to-js', e));
+        return cb(new PluginError('gulp-json-to-js', e));
       }
     }
     cb(null, file);
