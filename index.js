@@ -20,13 +20,10 @@ function generate(template, sourceObject) {
       if(p1 === matchedValue[0]) { // 只有字符串的情况
         tempObj = sourceObject[p1];
       } else {
-
         tempObj = sourceObject;
-
         while ((myArray = myRe.exec(p1)) !== null) {
           tempObj = tempObj[myArray[0]];
         }
-
       }
 
       if (tempObj instanceof Object) {
@@ -41,6 +38,7 @@ function generate(template, sourceObject) {
     }
 
     return '';
+    
   });
 }
 
@@ -68,6 +66,7 @@ module.exports = function(options) {
         return cb(new PluginError('gulp-json-to-js', e));
       }
     }
+    
     cb(null, file);
 
   });
