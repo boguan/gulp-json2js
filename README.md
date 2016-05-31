@@ -98,6 +98,6 @@ module.exports = {
 
 ## LICENSE
 
-Copyright (c) 2016 BoGuan
+Copyright (c) 2016 Bo Guan
 
 Licensed under the MIT license.
